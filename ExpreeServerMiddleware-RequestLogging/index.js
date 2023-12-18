@@ -5,7 +5,8 @@ const app = express();
 
 const logRequest = (req, res, next) => {
   // Write your code here
-  console.log(`${req.method} ${req.path}`);
+  console.log(`${req.method}`);
+  console.log(`${req.path}`);
   next();
 };
 
