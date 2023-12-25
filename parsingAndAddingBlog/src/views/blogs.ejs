@@ -1,0 +1,17 @@
+<!-- // Write your code here -->
+
+<% blogs.forEach((blog) => { %>
+    <div class="col-sm-auto">
+        <div class="col">
+            <img src="<%= blog.img %>" alt="image" width="200px"/>
+        </div>
+        <div class="col">
+            <div class="row">
+                <%= blog.title %>
+            </div>
+            <div class="row">
+                <%= blog.description %>
+            </div>
+        </div>
+    </div>
+<% }) %>
