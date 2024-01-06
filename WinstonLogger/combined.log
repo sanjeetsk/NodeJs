@@ -1,0 +1,1 @@
+{"level":"info","message":"Sat Jan 06 2024 23:28:56 GMT+0530 (India Standard Time) \n req URL: /api/user/login \n reqBody: {\"email\":\"krvivi28@gmail.com\",\"password\":\"vivek28@\"}","service":"user-service"}
