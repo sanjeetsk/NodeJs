@@ -1,0 +1,5 @@
+{"error message":"Oops! Something went wrong... Please try again later!","level":"error","request URL":"/test-unhandled-error","timestamp":"Sun Jan 07 2024 21:58:34 GMT+0530 (India Standard Time)"}
+{"error message":"Oops! Something went wrong... Please try again later!","level":"error","request URL":"/test-unhandled-error","timestamp":"Sun Jan 07 2024 21:59:36 GMT+0530 (India Standard Time)"}
+{"error message":"testing app level custom error handling middleware","level":"error","request URL":"/test-custom-error","timestamp":"Sun Jan 07 2024 22:00:23 GMT+0530 (India Standard Time)"}
+{"error message":"testing app level custom error handling middleware","level":"error","request URL":"/test-custom-error","timestamp":"Sun Jan 07 2024 22:01:03 GMT+0530 (India Standard Time)"}
+{"error message":"testing app level custom error handling middleware","level":"error","request URL":"/test-custom-error","timestamp":"Sun Jan 07 2024 22:01:04 GMT+0530 (India Standard Time)"}
