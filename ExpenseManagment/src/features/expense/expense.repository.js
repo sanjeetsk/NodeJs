@@ -44,15 +44,16 @@ class ExpenseRepository {
   }
 
   // Add tag to an expense
-  async addTagToExpense(id, tags) {
+  async addTagToExpense(id, tag) {
     try {
       const db = getDB();
       const collection = db.collection(this.collectionName);
       await collection.updateOne(
-        {
-          $set: { tags: [] }, // Set 'tags' to an empty array if it's null
-          $push: { tags: { $each: tags } }
-        }
+          {_id:new ObjectId(id)}, 
+          // $set: { tags: [] }, // Set 'tags' to an empty array if it's null
+          {
+            $push: { tags: tag } 
+          }
       );
     }
     catch (err) {
@@ -74,7 +75,7 @@ class ExpenseRepository {
         filterExpression.amount = { ...filterExpression.amount, $lte: parseFloat(maxAmount) }
       }
       if (isRecurring !== undefined) {
-        filterExpression.isRecurring = isRecurring;
+        filterExpression.isRecurring = JSON.parse(isRecurring.toLowerCase());
       }
       console.log(filterExpression);
       return await collection.find(filterExpression).toArray();

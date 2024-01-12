@@ -59,19 +59,19 @@ export default class ExpenseController {
   addTag = async (req, res) => {
     try {
       const id = req.params.id;
-      const { tags } = req.body;
+      const { tag } = req.body;
       const expense = await this.expenseRepository.getOne(id);
 
       if (!expense) {
         return res.status(404).json({ error: `Expense not found with ID: ${id}` });
       }
 
-      if (!tags ) {
+      if (!tag ) {
         return res.status(400).json({ error: 'Invalid or missing tags in the request body' });
       }
 
-      await this.expenseRepository.addTagToExpense(id, tags);
-      return res.status(201).send("Tag added successfully");
+      await this.expenseRepository.addTagToExpense(id, tag);
+      return res.status(200).send("Tag added successfully.");
     } catch (err) {
       console.error("Error in addTag:", err);
       return res.status(500).json({ error: 'Internal Server Error' });
