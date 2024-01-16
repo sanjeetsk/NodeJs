@@ -1,0 +1,54 @@
+/node_modules
+
+/package-lock.json
+
+
+[
+    {
+        "_id": [
+            "food", 
+            "drinks"
+        ],
+        "expenses": [
+            {
+                "_id": "65a4ec693c847e15ece8b6f1",
+                "title": "groceries",
+                "amount": 2500,
+                "date": "23-09-2023",
+                "isRecurring": true,
+                "tags": [
+                    "food", 
+                    "drinks"
+                ]
+            },
+            {
+                "_id": "65a5693428aa759ee834ef71",
+                "title": "dining",
+                "amount": 2100,
+                "date": "25-09-2023",
+                "isRecurring": true,
+                "tags": [
+                    "food", 
+                    "drinks"
+                ]
+            }
+        ]
+    },
+    {
+        "_id": [ 
+            "travel"
+        ],
+        "expenses": [
+            {
+                "_id": "65a65a11a8f2b7b49d53a145",
+                "title": "vaction",
+                "amount": 10000,
+                "date": "23-01-2023",
+                "isRecurring": false,
+                "tags": [ 
+                    "travel"
+                ],
+            }
+        ]
+    }
+]
